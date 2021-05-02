@@ -1,0 +1,81 @@
+.main { 
+    width : 100% ;
+    padding : 2rem  0 ;  
+    height : fit-content; 
+    background : $dark-grey-2  ; 
+
+
+    &__wrap {
+        width: 35rem ;
+        margin: 0 auto ;
+        margin-bottom : 4rem ; 
+        padding: 1.5rem 2rem 4rem ;
+        font-size: 1.6rem ;
+        background: $white ;
+        border-radius: .3rem ;
+        -webkit-border-radius: .3rem ;
+        -moz-border-radius: .3rem ;
+        -ms-border-radius: .3rem ;
+        -o-border-radius: .3rem ;
+
+        box-shadow : 0 0 1rem .5rem rgba($black , .5) ; 
+
+        
+
+
+        & .display {
+            background: $dark-grey-4 ;
+            text-align: right ;
+            padding: 1rem .5rem ;
+            border-radius: $border-radius-medium ;
+            -webkit-border-radius: $border-radius-medium ;
+            -moz-border-radius: $border-radius-medium ;
+            -ms-border-radius: $border-radius-medium ;
+            -o-border-radius: $border-radius-medium ;
+            margin-bottom  : 1rem ; 
+            box-shadow : 0 0 .6rem .6rem rgba($black , .2);   
+            border-bottom : .3rem solid $black ;  
+
+
+            &:hover { 
+                transform : scale(1) translateY(-.3rem);
+            } 
+
+            &__history { 
+                color : $dark-grey-3 ;
+                height : 1em ; 
+            }
+
+            &__output { 
+                color : $white ;
+                text-shadow : 0 0 .2rem  rgba($black , 1) ; 
+                letter-spacing: .5px ; 
+
+            }
+        }
+
+    }
+
+}
+
+.buttons-holder { 
+    width : 100% ; 
+    margin : 0 auto ; 
+
+
+
+    p {     
+        &:not(:last-child) { 
+        margin-bottom : 1rem ;  
+        }
+        
+        button { 
+            &:not(:last-child) { 
+                margin-right  : 1rem ; 
+            }
+        
+    }
+        
+    }
+    
+}

@@ -1,0 +1,14 @@
+.row { 
+    margin-bottom: 1rem ;
+    display : block ; 
+
+    .col-1-of-2 {
+        display : inline-block ; 
+        width : 45% ;  
+        vertical-align: top;
+        
+        &:not(:last-child) { 
+            margin-right : 5% ;  
+        }
+    }
+}

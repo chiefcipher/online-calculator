@@ -1,0 +1,48 @@
+
+.btn {
+    outline: none ;
+    border: none ;
+    width: 6.5rem ;
+    height: 6.5rem;
+    text-align: center ;
+    border-radius: $border-radius-medium ;
+    -webkit-border-radius: $border-radius-medium ;
+    -moz-border-radius: $border-radius-medium ;
+    -ms-border-radius: $border-radius-medium ;
+    -o-border-radius: $border-radius-medium ;
+    box-shadow: 0 0 .5rem .3rem rgba($black, .3) ;
+    transition: outline .1s linear ;
+    -webkit-transition: outline .1s linear ;
+    -moz-transition: outline .1s linear ;
+    -ms-transition: outline .1s linear ;
+    -o-transition: outline .1s linear ;
+    font-weight: 600 ;
+    font-size: 2rem ;
+    
+    
+    &:hover { 
+        outline : .3rem solid $black ; 
+        outline-offset: .3rem ; 
+        
+
+
+    }
+    
+
+    
+    &--number{
+        background : $dark-grey-3 ; 
+    }
+
+    &--operator { 
+        background :  $dark-grey-5 ;
+
+    }
+
+    &--control { 
+        background :  $dark-grey-6 ;
+
+        
+    }
+    
+}

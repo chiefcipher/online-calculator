@@ -1,0 +1,36 @@
+.footer { 
+    width: 100% ; 
+    background : $dark-grey ; 
+    padding : 5rem 5rem; 
+    font-size : 2rem ; 
+
+    
+    &__title { 
+        margin-bottom : 1rem ; 
+    }
+
+
+
+    ul { 
+        list-style-position: inside; 
+
+    } 
+
+    a { 
+        text-decoration : none ;
+
+    }
+    .profile-link:link , 
+    .profile-link:visited  { 
+        color : orangered ; 
+        font-weight : 500 ;  
+        display : inline-block ; 
+    }
+
+    .profile-link:hover {
+        color: rgba($white ,  .85) ;
+       
+}
+
+
+}

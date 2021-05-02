@@ -1,0 +1,25 @@
+@mixin respond-phone { 
+    @media (max-width : 500px ) { @content ;    } ; 
+
+} 
+ @mixin respond-phone-small { 
+    @media (max-width : 400px) { @content } ;
+}
+
+
+@mixin respond-phone-smallest { 
+    @media (max-width : 300px ) { @content ; } ; 
+}
+
+
+@mixin respond-minimum { 
+    @media (max-width : 240px ) { @content ; } ;  
+
+}
+
+/*
+@mixin respond-minimum-small { 
+    @media (max-width : 170px ) { @content ; } ; 
+} */
+
+

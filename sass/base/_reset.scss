@@ -1,0 +1,33 @@
+* , 
+*::before , 
+*::after { 
+    margin : 0 ; 
+    padding :0 ; 
+    box-sizing : border-box ;  
+    font-family: inherit ; 
+    font-size : inherit ; 
+    
+}
+
+html { 
+    font-size : 62.5% ;  
+     font-family : 'Rubik' , 'Roboto' , 'Montserrat'  ; 
+    
+     @include respond-phone { 
+         font-size : 55% ; 
+     }
+
+     @include respond-phone-small { 
+         font-size : 50% ; 
+     } 
+     @include respond-phone-smallest { 
+         font-size : 40% ; 
+     }
+
+     @include respond-minimum { 
+         font-size : 30% ; 
+     }
+    }
+    
+
+
