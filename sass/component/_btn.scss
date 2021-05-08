@@ -2,47 +2,67 @@
 .btn {
     outline: none ;
     border: none ;
-    width: 6.5rem ;
-    height: 6.5rem;
+    width: 6.2rem ;
+    height: 4rem;
     text-align: center ;
     border-radius: $border-radius-medium ;
     -webkit-border-radius: $border-radius-medium ;
     -moz-border-radius: $border-radius-medium ;
     -ms-border-radius: $border-radius-medium ;
     -o-border-radius: $border-radius-medium ;
-    box-shadow: 0 0 .5rem .3rem rgba($black, .3) ;
+    box-shadow: 0 0 .3rem .3rem rgba($white ,.2) ;
     transition: outline .1s linear ;
+
+
+
     -webkit-transition: outline .1s linear ;
     -moz-transition: outline .1s linear ;
     -ms-transition: outline .1s linear ;
     -o-transition: outline .1s linear ;
-    font-weight: 600 ;
-    font-size: 2rem ;
     
-    
-    &:hover { 
+/*  
+    REMOVED THIS HOVER EFFECT 
+    PREFERRED THAT OF EMPHASIZING THE BUTTONS BACKGROUND COLOR 
+&:hover { 
         outline : .3rem solid $black ; 
-        outline-offset: .3rem ; 
-        
-
-
-    }
+        outline-offset: .2rem ; 
+    } */
     
 
     
-    &--number{
-        background : $dark-grey-3 ; 
+    &--number , &--log, &--shift {
+        background : $btn-primary-color-changed ;
+        &:hover {
+             background: darken($color: $btn-primary-color-changed, $amount: 10%)
+        }
     }
-
+/* 
     &--operator { 
-        background :  $dark-grey-5 ;
-
-    }
+        background :  darken($color: $carton, $amount : 5%) ;
+        } */
 
     &--control { 
-        background :  $dark-grey-6 ;
-
-        
+        background :  $dark-grey-6 ;  
+    
     }
+
+    &--trig , &--operator { 
+        background :  darken($color: $carton, $amount : 5%) ;
+        
+
+        &:hover { 
+            background : darken($color: $carton , $amount: 15% )
+        }
+    }
+
+    &--operator-equal { 
+        background : $red ;   
+
+        &:hover { 
+            background : hsl(0, 86%, 50%) ;
+        }
+      
+    }
+
     
 }

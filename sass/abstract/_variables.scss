@@ -1,6 +1,7 @@
 
 
 $black : #000 ; 
+
 $white : #fff ; 
 
 $dark-grey : hsl(0,0%,10%) ; 
@@ -9,7 +10,9 @@ $dark-grey-2 : hsl(0, 0%, 20%) ;
 $dark-grey-3 : hsl(0,0,25%) ; 
 $dark-grey-4 : hsl(0,0,35%)  ; 
 $dark-grey-5 : hsl(0,0,50%) ; 
-$dark-grey-6 : hsl(0,0,75%) ;  
+$dark-grey-6 : hsl(0,0,75%) ; 
+$dark-grey-7 : hsl(0,0,85%) ;
+ 
 
 
 $border-radius-medium : 3px ; 
@@ -23,7 +26,7 @@ $dark-blue : #2177ae ;
 $blue-jeans : #57b8ff ; 
 $brown : #b66d0d ; 
 $carton : #fbb13c ; 
-$kinda-orange : #fe6847 ; 
+$red : hsl(0, 100%, 50%) ; 
 
 
 $space-sparkle : #395e66 ; 
@@ -39,3 +42,12 @@ $medium-aquamarine : #49dbc1 ;
 $sunray : #eeb868 ; 
 
 
+$btn-primary-color : hsl(210, 82%, 40%) ; 
+$btn-primary-color-changed : hsl(210, 82%, 35%);  
+
+ 
+//MAJOR BREAKPOINTS VARIABLES  
+$biggest : 510px ; 
+$big : 410px ; 
+$small : 310px ; 
+$smallest : 250px ;

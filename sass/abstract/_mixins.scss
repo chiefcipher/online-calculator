@@ -1,21 +1,28 @@
-@mixin respond-phone { 
-    @media (max-width : 500px ) { @content ;    } ; 
+/* @mixin respond-phone { 
+    @media (max-width : 510px ) { @content ;    } ; 
 
 } 
  @mixin respond-phone-small { 
-    @media (max-width : 400px) { @content } ;
+    @media (max-width : 410px) { @content } ;
 }
 
 
 @mixin respond-phone-smallest { 
-    @media (max-width : 300px ) { @content ; } ; 
+    @media (max-width : 310px ) { @content ; } ; 
 }
 
 
 @mixin respond-minimum { 
-    @media (max-width : 240px ) { @content ; } ;  
+    @media (max-width : 250px ) { @content ; } ;  
 
-}
+} */
+
+
+@mixin respond-variable ($breakpoint) { 
+    @media (max-width : $breakpoint ) { 
+        @content ; 
+    }
+} 
 
 /*
 @mixin respond-minimum-small { 

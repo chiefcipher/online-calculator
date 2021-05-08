@@ -1,4 +1,7 @@
-/* @font-face { 
+//?REMEMBER TO COMMENT FONT FACE BEFORE PUSHING TO GITHUB 
+
+
+@font-face { 
     font-family : 'Rubik' ;
     src : url('../../fonts/Rubik/static/Rubik-Regular.ttf') ; 
 }
@@ -12,29 +15,75 @@
     font-family : 'Roboto'; 
     src : url('../../fonts/Roboto/Roboto-Regular.ttf') ; 
 }
- */
+ 
 .header { 
 
 
     &__text { 
         font-weight : 100 ; 
         font-size : 3rem ;
-        color : $dark-grey-6 ;  
+        color : #fff ;  
     }
 }
 
 .main { 
     font-weight : 600 ; 
-    font-size : 2rem ; 
-}
+    font-size : 2rem ;  
+
+    
+    &__wrap .display { 
 
 
-.btn { 
-     
-    &--number { 
-        color : $white ; 
+    &__history {  
+        color : $white;
+        font-size : 1.5rem ;
+        letter-spacing: .3px ; 
+        font-weight : 400 ; 
+    }
+
+    &__output { 
+        color : $black ;
+        letter-spacing: .5px ; 
+        text-shadow : 0 0 .2rem  rgba($black , .2) ; 
+
+
     }
 }
+
+}
+
+.btn {
+    font-weight: 500 ;
+    font-size: 1.5rem ;
+    
+    
+    &--number{
+        color : $white ;  
+        font-size : 1.7rem ;
+    }
+
+    &--operator { 
+        font-size : 1.8rem ; 
+        font-weight : 900 ; 
+        
+        &-equal { 
+            color : $white ; 
+        }
+   }
+
+
+    &--number , &--trig , &--log , &--control{ 
+        font-weight : 500 ; 
+    }
+
+    &--log { 
+        color : $white ; 
+    }
+    &--shift { 
+    }
+    
+}
+
 
 
 .footer { 
@@ -53,6 +102,7 @@
         word-wrap: break-word ; 
         
 
+
         &__socials { 
 
             span { 
@@ -63,7 +113,8 @@
 
     ul { 
         font-size : 1.5rem ;
-
+        line-height : 1.5 ;
+        
     } 
 
     a { 

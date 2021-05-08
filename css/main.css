@@ -1,3 +1,21 @@
+/* @mixin respond-phone { 
+    @media (max-width : 510px ) { @content ;    } ; 
+
+} 
+ @mixin respond-phone-small { 
+    @media (max-width : 410px) { @content } ;
+}
+
+
+@mixin respond-phone-smallest { 
+    @media (max-width : 310px ) { @content ; } ; 
+}
+
+
+@mixin respond-minimum { 
+    @media (max-width : 250px ) { @content ; } ;  
+
+} */
 /*
 @mixin respond-minimum-small { 
     @media (max-width : 170px ) { @content ; } ; 
@@ -14,45 +32,67 @@
 html {
   font-size: 62.5%;
   font-family: 'Rubik' , 'Roboto' , 'Montserrat'; }
-  @media (max-width: 500px) {
+  @media (max-width: 510px) {
     html {
       font-size: 55%; } }
-  @media (max-width: 400px) {
+  @media (max-width: 410px) {
     html {
       font-size: 50%; } }
-  @media (max-width: 300px) {
+  @media (max-width: 310px) {
     html {
       font-size: 40%; } }
-  @media (max-width: 240px) {
+  @media (max-width: 250px) {
     html {
       font-size: 30%; } }
+  @media (max-width: 175px) {
+    html {
+      font-size: 20%; } }
 
-/* @font-face { 
-    font-family : 'Rubik' ;
-    src : url('../../fonts/Rubik/static/Rubik-Regular.ttf') ; 
-}
-@font-face { 
-    font-family : 'Montserrat' ;
-    src : url('../../fonts/Montserrat/Montserrat-Regular.ttf') ;  
+@font-face {
+  font-family: 'Rubik';
+  src: url("../../fonts/Rubik/static/Rubik-Regular.ttf"); }
 
-}
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../../fonts/Montserrat/Montserrat-Regular.ttf"); }
 
-@font-face { 
-    font-family : 'Roboto'; 
-    src : url('../../fonts/Roboto/Roboto-Regular.ttf') ; 
-}
- */
+@font-face {
+  font-family: 'Roboto';
+  src: url("../../fonts/Roboto/Roboto-Regular.ttf"); }
+
 .header__text {
   font-weight: 100;
   font-size: 3rem;
-  color: #bfbfbf; }
+  color: #fff; }
 
 .main {
   font-weight: 600;
   font-size: 2rem; }
+  .main__wrap .display__history {
+    color: #fff;
+    font-size: 1.5rem;
+    letter-spacing: .3px;
+    font-weight: 400; }
+  .main__wrap .display__output {
+    color: #000;
+    letter-spacing: .5px;
+    text-shadow: 0 0 0.2rem rgba(0, 0, 0, 0.2); }
 
-.btn--number {
-  color: #fff; }
+.btn {
+  font-weight: 500;
+  font-size: 1.5rem; }
+  .btn--number {
+    color: #fff;
+    font-size: 1.7rem; }
+  .btn--operator {
+    font-size: 1.8rem;
+    font-weight: 900; }
+    .btn--operator-equal {
+      color: #fff; }
+  .btn--number, .btn--trig, .btn--log, .btn--control {
+    font-weight: 500; }
+  .btn--log {
+    color: #fff; }
 
 .footer {
   color: #fff; }
@@ -67,7 +107,8 @@ html {
     .footer .author__socials span {
       color: #bfbfbf; }
   .footer ul {
-    font-size: 1.5rem; }
+    font-size: 1.5rem;
+    line-height: 1.5; }
   .footer a {
     text-decoration: none; }
 
@@ -77,31 +118,45 @@ html {
 .btn {
   outline: none;
   border: none;
-  width: 6.5rem;
-  height: 6.5rem;
+  width: 6.2rem;
+  height: 4rem;
   text-align: center;
   border-radius: 3px;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   -ms-border-radius: 3px;
   -o-border-radius: 3px;
-  box-shadow: 0 0 0.5rem 0.3rem rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 0.3rem 0.3rem rgba(255, 255, 255, 0.2);
   transition: outline .1s linear;
   -webkit-transition: outline .1s linear;
   -moz-transition: outline .1s linear;
   -ms-transition: outline .1s linear;
   -o-transition: outline .1s linear;
-  font-weight: 600;
-  font-size: 2rem; }
-  .btn:hover {
-    outline: 0.3rem solid #000;
-    outline-offset: .3rem; }
-  .btn--number {
-    background: #404040; }
-  .btn--operator {
-    background: gray; }
+  /*  
+    REMOVED THIS HOVER EFFECT 
+    PREFERRED THAT OF EMPHASIZING THE BUTTONS BACKGROUND COLOR 
+&:hover { 
+        outline : .3rem solid $black ; 
+        outline-offset: .2rem ; 
+    } */
+  /* 
+    &--operator { 
+        background :  darken($color: $carton, $amount : 5%) ;
+        } */ }
+  .btn--number, .btn--log, .btn--shift {
+    background: #1059a2; }
+    .btn--number:hover, .btn--log:hover, .btn--shift:hover {
+      background: #0b4074; }
   .btn--control {
     background: #bfbfbf; }
+  .btn--trig, .btn--operator {
+    background: #faa723; }
+    .btn--trig:hover, .btn--operator:hover {
+      background: #e68f05; }
+  .btn--operator-equal {
+    background: red; }
+    .btn--operator-equal:hover {
+      background: #ed1212; }
 
 .main {
   width: 100%;
@@ -114,7 +169,7 @@ html {
     margin-bottom: 4rem;
     padding: 1.5rem 2rem 4rem;
     font-size: 1.6rem;
-    background: #fff;
+    background: #fafafa;
     border-radius: .3rem;
     -webkit-border-radius: .3rem;
     -moz-border-radius: .3rem;
@@ -122,7 +177,8 @@ html {
     -o-border-radius: .3rem;
     box-shadow: 0 0 1rem 0.5rem rgba(0, 0, 0, 0.5); }
     .main__wrap .display {
-      background: #595959;
+      width: 100%;
+      background: #eaa743;
       text-align: right;
       padding: 1rem .5rem;
       border-radius: 3px;
@@ -131,17 +187,11 @@ html {
       -ms-border-radius: 3px;
       -o-border-radius: 3px;
       margin-bottom: 1rem;
-      box-shadow: 0 0 0.6rem 0.6rem rgba(0, 0, 0, 0.2);
+      box-shadow: 0 0 0.6rem 0.6rem rgba(255, 255, 255, 0.2);
       border-bottom: 0.3rem solid #000; }
-      .main__wrap .display:hover {
-        transform: scale(1) translateY(-0.3rem); }
       .main__wrap .display__history {
-        color: #404040;
-        height: 1em; }
-      .main__wrap .display__output {
-        color: #fff;
-        text-shadow: 0 0 0.2rem black;
-        letter-spacing: .5px; }
+        height: 1em;
+        margin-bottom: .5em; }
 
 .buttons-holder {
   width: 100%;
@@ -149,7 +199,7 @@ html {
   .buttons-holder p:not(:last-child) {
     margin-bottom: 1rem; }
   .buttons-holder p button:not(:last-child) {
-    margin-right: 1rem; }
+    margin-right: 1.3rem; }
 
 .footer {
   width: 100%;
@@ -157,9 +207,13 @@ html {
   padding: 5rem 5rem;
   font-size: 2rem; }
   .footer__title {
+    margin-bottom: 1.5rem; }
+  .footer .author > * {
     margin-bottom: 1rem; }
   .footer ul {
     list-style-position: inside; }
+    .footer ul li {
+      margin-bottom: 1rem; }
   .footer a {
     text-decoration: none; }
   .footer .profile-link:link,

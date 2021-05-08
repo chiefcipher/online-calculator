@@ -1,4 +1,3 @@
-//fix zero bug by checking the numbers section and the formatter you used (new Intl.NumberFormat) ; 
 
 
 let output = document.querySelector("#output");

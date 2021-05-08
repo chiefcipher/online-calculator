@@ -6,13 +6,24 @@
 
     
     &__title { 
-        margin-bottom : 1rem ; 
+        margin-bottom : 1.5rem ; 
     }
+    .author { 
 
+        
+        & > * { 
+            margin-bottom : 1rem ; 
+        }
+
+    } 
 
 
     ul { 
-        list-style-position: inside; 
+        list-style-position: inside;  
+
+        li { 
+            margin-bottom : 1rem; 
+        }
 
     } 
 

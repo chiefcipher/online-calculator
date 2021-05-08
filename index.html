@@ -11,6 +11,7 @@
                 <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&family=Rubik&display=swap" rel="stylesheet">
                 <script src='js_scripts/mains_script.js' defer></script>
                 <script src='js_scripts/trig_functions.js' defer></script> 
+                <script src='js_scripts/keyboardevents.js' defer></script> 
             </head>
             <body> 
                 <section class='header u-center-text'>
@@ -31,36 +32,42 @@
                         </div>
                         <div class='buttons-holder u-center-text' id="calc_buttons"> 
                             <p>
-                            <button id='7' class='btn btn--number'>7</button>
-                            <button id='8' class='btn btn--number '>8</button>
-                            <button id='9' class='btn btn--number '>9</button>
-                            <button id='+' class='btn btn--operator'>+</button>   
+                            <button id='7' class='btn btn--number btn--number-7'>7</button>
+                            <button id='8' class='btn btn--number btn--number-8'>8</button>
+                            <button id='9' class='btn btn--number btn--number-9'>9</button>
+                            <button id='+' class='btn btn--operator btn--operator-plus'>+</button>   
                             </p> 
                             <p>                          
-                            <button id='4' class='btn btn--number'>4</button>
-                            <button id='5' class='btn btn--number '>5</button>
-                            <button id='6' class='btn btn--number '>6 </button>                            
-                            <button id='-' class='btn btn--operator'>-</button>  
+                            <button id='4' class='btn btn--number btn--number-4'>4</button>
+                            <button id='5' class='btn btn--number btn--number-5'>5</button>
+                            <button id='6' class='btn btn--number btn--number-6'>6 </button>                            
+                            <button id='-' class='btn btn--operator btn--operator-minus'>-</button>  
                             </p> 
                             <p> 
-                            <button id='1' class='btn btn--number '>1</button>
-                            <button id='2' class='btn btn--number '>2 </button>                         
-                            <button id='3' class='btn btn--number'>3</button>
-                            <button id='/' class='btn btn--operator'>&#247</button>  
+                            <button id='1' class='btn btn--number btn--number-1'>1</button>
+                            <button id='2' class='btn btn--number btn--number-2'>2 </button>                         
+                            <button id='3' class='btn btn--number btn--number-3'>3</button>
+                            <button id='/' class='btn btn--operator btn--operator-divide'>&#247</button>  
                             </p> 
                             <p>
-                            <button id='.' class='btn btn--number'>. </button> 
-                            <button id='0' class='btn btn--number '>0</button>
-                            <button id='%' class='btn btn--operator'>%</button> 
-                            <button id='*' class='btn btn--operator'>&times</button>  
+                            <button id='.' class='btn btn--number btn--number-period'>. </button> 
+                            <button id='0' class='btn btn--number btn--number-0'>0</button>
+                            <button id='shift' class='btn btn--shift '> &nbsp;</button> 
+                            <button id='*' class='btn btn--operator btn--operator-times'>&times</button>  
                             </p>
-                            
                             <p>
-                            <button id='power' class='btn btn--control'>C</button>
-                            <button id='clr' class='btn btn--control'>CLR </button>                        
-                            <button id='=' class='btn btn--operator'>=</button>                        
+                                <button id='sin' class='btn btn--trig' > Sin(x) </button> 
+                                <button id='cos' class='btn btn--trig' > Cos(x) </button> 
+                                <button id='tan' class='btn btn--trig' > Tan(x) </button> 
+                                <button id='%' class='btn btn--operator btn--operator-modulus'>%</button> 
                             </p>
-
+                            <p>
+                            <button id='log' class='btn btn--log' > Log(x) </button> 
+                            <button id='power' class='btn btn--control btn--control-power'>C</button>
+                            <button id='clr' class='btn btn--control btn--control-clear '>CLR </button>                        
+                            <button id='=' class='btn btn--operator btn--operator-equal'>=</button>                        
+                        </p>
+                            
                         </div>
                 </div>
                 </section>
@@ -70,6 +77,9 @@
                             <div class="footer__title"> App Details </div> 
                             <ul>
                                 <li>Solves basic mathematical calculations</li>
+                                <li>Performs trigonometric functions like sin, cos and tangent</li>
+                                <li>Takes the input value to represent(x) and then uses it to find to find sin, cos, tan and log<sub>10</sub>.</li>
+                                <li>Allows desktop users to use their keypad to enter numbers and make calculations.</li>
                             </ul>
                         </div>
                         <div class="col-1-of-2">

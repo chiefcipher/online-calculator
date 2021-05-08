@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "convert:sass": "node-sass sass/main.scss css/main.css -w"
+    "convert:sass": "node-sass sass/main.scss css/main.css "
   },
   "author": "",
   "license": "ISC",
